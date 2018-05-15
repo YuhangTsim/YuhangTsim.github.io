@@ -100,7 +100,7 @@ menu:
   # search: /search/ || serach
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  commonweal: /en
 
 # Enable/Disable menu icons.
 menu_icons:
