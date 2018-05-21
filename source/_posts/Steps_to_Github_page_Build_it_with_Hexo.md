@@ -3,6 +3,8 @@ title: Steps to Github page-Build it with Hexo
 date: 2018-05-15 12:54:51
 tags: [Web, Github Page]
 ---
+从零开始，搭建Github page.
+<!-- more -->
 # 前言
 
 从零开开始一个博客，只能从Google开始。网上能轻易搜到的教程不少，但用的平台无非几个，CSDN, 简书，知乎专栏，Github，Wordpress。对于我而言，前面的三个都不是我的选择，因为他们都没办法自己管理数据，所以只能选择Github page或者Wordpress。本来wordpress已经几乎搭建好了，但是域名转接要花钱，觉得暂时没必要，故而选择Github。Github自由一点，可以随意发挥，只是又一次开始了无穷的折腾。
