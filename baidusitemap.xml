@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://tsim.xyz/2018/05/15/Steps-to-Github-page-Build-it-with-Hexo/</loc>
+    <lastmod>2018-05-21T03:40:59.666Z</lastmod>
+    <data>
+        <display>
+        <title>Steps to Github page-Build it with Hexo</title>
+        <pubTime>2018-05-15T16:54:51.000Z</pubTime>
+        
+        <tag>Web</tag>
+         
+        <tag>Github Page</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://tsim.xyz/2018/05/13/first-note/</loc>
+    <lastmod>2018-05-15T15:42:29.570Z</lastmod>
+    <data>
+        <display>
+        <title>About this site.</title>
+        <pubTime>2018-05-13T04:28:47.000Z</pubTime>
+        
+        <tag>Something</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+</urlset>

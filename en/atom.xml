@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Tsim</title>
+  
+  
+  <link href="/en/atom.xml" rel="self"/>
+  
+  <link href="http://tsim.xyz/"/>
+  <updated>2018-05-15T17:57:23.161Z</updated>
+  <id>http://tsim.xyz/</id>
+  
+  <author>
+    <name>Tsim</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>About this site.</title>
+    <link href="http://tsim.xyz/2018/05/13/first-note/"/>
+    <id>http://tsim.xyz/2018/05/13/first-note/</id>
+    <published>2018-05-13T04:28:47.000Z</published>
+    <updated>2018-05-15T17:57:23.161Z</updated>
+    
+    <content type="html"><![CDATA[<p>It has been two or three years since I first came out with the idea to build a personal websit, for me to record my learning journey in Data Science. This dream came to reality finally, at the second day after the end of my first graduate study year.  </p><p>I built this website with a thought that I need a place to hold and archive most of my knowledge in programming, analyzing projects. Most of my notes were lost when I got a new laptop or desktop or graudation. And paper note is quite hard to find what you need in a short time. Both of these reasons drive me to this solution. I hope this website can at least help me in somw way for my leanring. </p><p>2018.5.13<br>Greenbelt.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;It has been two or three years since I first came out with the idea to build a personal websit, for me to record my learning journey in D
+      
+    
+    </summary>
+    
+    
+      <category term="Something" scheme="http://tsim.xyz/tags/Something/"/>
+    
+  </entry>
+  
+</feed>
