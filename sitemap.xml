@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://tsim.xyz/2018/05/13/first-note/</loc>
+    <loc>http://tsim.xyz/2018/05/21/second-post-for-hexo/</loc>
     
-    <lastmod>2018-05-21T04:07:53.939Z</lastmod>
+    <lastmod>2018-05-22T03:04:37.776Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://tsim.xyz/2018/05/15/Steps-to-Github-page-Build-it-with-Hexo/</loc>
     
-    <lastmod>2018-05-21T04:07:22.803Z</lastmod>
+    <lastmod>2018-05-22T03:04:32.559Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://tsim.xyz/2018/05/13/first-note/</loc>
+    
+    <lastmod>2018-05-21T04:07:53.939Z</lastmod>
     
   </url>
   
