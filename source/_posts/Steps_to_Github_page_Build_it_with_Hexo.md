@@ -2,6 +2,7 @@
 title: 从零开始搭建Github Page -- Hexo入门
 date: 2018-05-15 12:54:51
 tags: [Web, Github Page]
+categories: Github page
 ---
 从零开始，使用Hexo搭建个人Github page.
 <!-- more -->

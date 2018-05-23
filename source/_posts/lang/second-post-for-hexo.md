@@ -2,6 +2,7 @@
 title: 从零开始搭建Github Page -- 源码备份&双语网站
 date: 2018-05-21 17:44:47
 tags: [Web, Github Page]
+categories: Github page
 ---
 在初步架设了个人Github page后，为了方便多端同步工作，可以将源码通过Github进行备份；其次，为了适应海外工作，架设双语网站。
 <!-- more -->
