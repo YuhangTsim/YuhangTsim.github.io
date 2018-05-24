@@ -1,37 +1,41 @@
 ---
-title: 从零开始搭建Github Page -- Hexo入门
+title: Hexo入门 Steps to Github Page -- Intro of Hexo
 date: 2018-05-15 12:54:51
 tags: [Web, Github Page]
 ---
-从零开始，使用Hexo搭建个人Github page.
+Start from the beginning, build a personal Github Page by Hexo.
 <!-- more -->
-# 前言
 
-从零开始一个博客，只能从Google开始。网上能轻易搜到的教程不少，但用的平台无非几个，CSDN, 简书，知乎专栏，Github，Wordpress。对于我而言，前面的三个都不是我的选择，因为他们都没办法自己管理数据，所以只能选择Github page或者Wordpress。本来wordpress已经几乎搭建好了，但是域名转接要花钱，觉得暂时没必要，故而选择Github。Github自由一点，可以随意发挥，只是又一次开始了无穷的折腾。
+# Intro
 
-首先，最重要的是，诸多的帖子都不一定能满足自己的需求或者达到它所描述的效果。关键还事在于不断的思考和分析，然后摸索出自己的路。  
+Google is always the first step to do somthing and no exception for building a Github page. There are lots of tutorials in the web for how to build up such a blog, you can also search on Youtube for vedio tutorial. But somehow I think English tutorial is more like a basic knowledage, they build their pages with Github build-in theme. There are too much for me to set up at the beginning if I do that. Then I turned to Chinese tutorial and found out this Hexo.
 
-整个过程参考过的帖子很多，这里放出来一部分比较重要的：
-[使用GitHub和Hexo搭建免费静态Blog](https://wsgzao.github.io/post/hexo-guide/)
-[Hexo document](https://hexo.io/zh-cn/docs/)
-[Hexo博客添加搜索功能](http://www.itfanr.cc/2017/10/27/add-search-function-to-hexo-blog/)
-[hexo实现中英双语博客教程](https://chenyxmr.github.io/2016/08/04/hexo-bilingual/)  
+There are lots of platforms for someone to build their blog, for example, Wordpress, CSDN, or setup a personal sever. The reason I go for Github is that this is the only way that I can own the website totally beside building a sever by myself which will bring too much technical stuff and doesn't fit my original intention to mark down and systemize the knowledge I learned.
 
-## 准备工作
+Although there are tons of tutorials you can easily reach, the most importance thing I want to emphasize is that you need to keep thinking, analyzing, and logicing down everytime you face a problem. Because these tutorials can not meet all your requirement.
 
-本文针对<font color=#6e081d>``Mac``</font>和<font color=#6e081d>``Win``</font>，以及<font color=#6e081d>``Hexo 3.7``</font>。
+There are lots of reference in the whole procedure, here are some important ones (In Chinese):
+
+1. [Blog Build a free statis Blog with Github and Hexo](https://wsgzao.github.io/post/hexo-guide/)
+2. [Hexo document](https://hexo.io/zh-cn/docs/)
+3. [Add Search on your Hexo blog](http://www.itfanr.cc/2017/10/27/add-search-function-to-hexo-blog/)
+4. [Build a dual-language blog on hexo](https://chenyxmr.github.io/2016/08/04/hexo-bilingual/)  
+
+## Preparation
+
+This tutorial focuses on <font color=#6e081d>``Mac``</font> and <font color=#6e081d>``Win``</font>，based on <font color=#6e081d>``Hexo 3.7``</font>。
 
 #### About Hexo
 
 [Hexo.io](hexo.io):
-Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析    文章，在几秒内，即可利用靓丽的主题生成静态网页。
+Hexo is a fast, simple and powerful blog framework. You write posts in Markdown (or other languages) and Hexo generates static files with a beautiful theme in seconds.
 
-#### 安装Git, Node.JS, Hexo
+#### Install Git, Node.JS, Hexo
 
-[Github](https://github.com/)， [Node.js](https://nodejs.org/) 按着官网步骤安装即可。  
+Follor the official document to install [Git](https://git-scm.com/)， [Node.js](https://nodejs.org/).
 
 ```bash
-# 检查是否安装成功
+# To check the installation
 $ npm -v # 5.6.0
 $ node -v # v8.11.1
 $ git --version # git version 2.16.3
@@ -39,27 +43,27 @@ $ git --version # git version 2.16.3
 
 ##### Hexo
 
-首先是安装。
+First step, installation
 
 ```bash
-# 安装Hexo
+#  Install Hexo
 $ npm install -g hexo-cli
 ```
 
-初始化网站有两种方法。
+There are two ways to initialize the website.
 
 ```bash
-# 1. 在目标文件夹内初始化
-$ hexo init # 初始化网站
-# 2. 新建文件夹初始化
+# 1. Initialize in target folder
+$ hexo init 
+# 2. Initialize in new folder
 $ hexo init <folder>
 
 $ cd folder
-$ npm install 
-# 没有任何错误提示的话，就是成功了
+$ npm install
+# Success, if there is no ouput
 ```
 
-完成之后安装插件。
+Install extensions.
 
 ```bash
 npm install hexo-generator-index --save
@@ -77,35 +81,34 @@ npm install hexo-generator-feed@1 --save
 npm install hexo-generator-sitemap@1 --save
 ```
 
-至此初步的安装就算结束了。
+That is all for basic installation.
 
-###### 本地查看
+###### Deploy to local
 
 ```bash
 $ hexo server
+# Go localhost:4000 to see the page
 ```
-到[本地](localhost:4000)查看效果即可。
 
-###### Hexo基本操作
+###### Basic command for Hexo
 
 ```bash
-$ hexo n 'post_name' # 新建post页面 (new)
-$ hexo new page "page_name" # 新建网络页面 (new page)
-$ hexo g # 生成网页 (generate)
-$ hexo s # 启动服务器 (server)
-$ hexo d # 部署网站 (deploy)
-$ hexo clean # 清除缓存文件
+$ hexo n 'post_name' # 新建post页面 (new) Create a new post
+$ hexo new page "page_name" # 新建网络页面 (new page) Create a new post
+$ hexo g # 生成网页 (generate) Generate the website
+$ hexo s # 启动服务器 (server) Start local sever
+$ hexo d # 部署网站 (deploy) Deploy the website
+$ hexo clean # 清除缓存文件 Clean cache
 ```
 
-## 配置
+## Configeration
 
 ### Github
+Github provides a free domain, username.github.io, for every account. We can use this as the domain of our blog or buy a domain to replace it.
 
-每个账号能提供一个免费的域名给我们建立Github page，username.github.io。我们可以直接使用这个域名，也可以使用自己购买的域名。
+To use the github page, we need to create a new repository called **\<username>.github.io**.
 
-使用Github page我们需要用username.github.io作为名字新建一个repository，新建完成后使用默认配置即可。
-
-为了正常的部署网站，还需要配置SSH和Github仓库。
+And we also need to confige SSH and the repository.
 具体参考[技术小白搭建个人博客 github+hexo](https://zhuanlan.zhihu.com/p/32957389)中的配置部分。
 
 ### Hexo
