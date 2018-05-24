@@ -3,9 +3,33 @@
 
 
     
+    
+    
+  <url>
+    <loc>http://tsim.xyz/2018/05/22/third-post-Hexo/</loc>
+    <lastmod>2018-05-24T13:56:00.800Z</lastmod>
+    <data>
+        <display>
+        <title>从零开始搭建Github Page -- 网站页面、内容、功能的添加</title>
+        <pubTime>2018-05-23T01:09:01.000Z</pubTime>
+        
+        <tag>Web</tag>
+         
+        <tag>Github Page</tag>
+         
+         
+           
+             
+              <breadCrumb title="Github page" url="http://tsim.xyz/categories/Github-page/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://tsim.xyz/2018/05/21/second-post-for-hexo/</loc>
-    <lastmod>2018-05-22T03:04:37.776Z</lastmod>
+    <lastmod>2018-05-24T13:56:00.793Z</lastmod>
     <data>
         <display>
         <title>从零开始搭建Github Page -- 源码备份&双语网站</title>
@@ -17,13 +41,16 @@
          
          
            
+             
+              <breadCrumb title="Github page" url="http://tsim.xyz/categories/Github-page/"/>
+          
         </display>
     </data>
     </url>
 
     
   <url>
-    <loc>http://tsim.xyz/2018/05/15/Steps-to-Github-page-Build-it-with-Hexo/</loc>
+    <loc>http://tsim.xyz/2018/05/15/Steps_to_Github_page_Build_it_with_Hexo/</loc>
     <lastmod>2018-05-22T03:04:32.559Z</lastmod>
     <data>
         <display>
@@ -57,7 +84,5 @@
     </data>
     </url>
 
-    
-    
     
 </urlset>

@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://tsim.xyz/2018/05/21/second-post-for-hexo/</loc>
+    <loc>http://tsim.xyz/tags/index.html</loc>
     
-    <lastmod>2018-05-22T03:04:37.776Z</lastmod>
+    <lastmod>2018-05-24T13:56:00.813Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://tsim.xyz/2018/05/15/Steps-to-Github-page-Build-it-with-Hexo/</loc>
+    <loc>http://tsim.xyz/categories/index.html</loc>
+    
+    <lastmod>2018-05-24T13:56:00.806Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://tsim.xyz/2018/05/22/third-post-Hexo/</loc>
+    
+    <lastmod>2018-05-24T13:56:00.800Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://tsim.xyz/2018/05/21/second-post-for-hexo/</loc>
+    
+    <lastmod>2018-05-24T13:56:00.793Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://tsim.xyz/2018/05/15/Steps_to_Github_page_Build_it_with_Hexo/</loc>
     
     <lastmod>2018-05-22T03:04:32.559Z</lastmod>
     
@@ -23,23 +44,9 @@
   </url>
   
   <url>
-    <loc>http://tsim.xyz/categories/index.html</loc>
-    
-    <lastmod>2018-05-15T05:34:05.898Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://tsim.xyz/about/index.html</loc>
     
     <lastmod>2018-05-14T06:11:26.226Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://tsim.xyz/tags/index.html</loc>
-    
-    <lastmod>2018-05-14T05:47:14.392Z</lastmod>
     
   </url>
   
