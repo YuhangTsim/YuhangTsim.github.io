@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -143,7 +143,7 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-119131331-1', 'auto');
   ga('send', 'pageview');
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
@@ -158,7 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -387,10 +387,11 @@
       
 
       
-        <p>My first post.<br><a id="more"></a><br>想开这个Blog估计有两三年了，一直没有走出实际的一步。终于在研一结束后的第二天，用hexo在github上线最简陋的模板。折腾了一圈，准备好的域名 <a href="http://tsim.xyz">tsim.xyz</a> 暂时没能正常用上，总是什么都显示不出来。  </p>
+        <p>My first post. <a id="more"></a> 想开这个Blog估计有两三年了，一直没有走出实际的一步。终于在研一结束后的第二天，用hexo在github上线最简陋的模板。折腾了一圈，准备好的域名 <a href="http://tsim.xyz">tsim.xyz</a> 暂时没能正常用上，总是什么都显示不出来。</p>
 <p>开blog的初衷,是需要一个地方把一直以来各种地方用到的，学到的知识整理归纳，方便自己以后再用。用笔记本，抑或Markdown，一换电脑总会出现各种找不到文件的情况，而且大多数的非电子文档也不方便搜索，复用起来效率低下。这几年重重复复刷了好多遍基础的知识，譬如Pandas, plt, scrapy之类的，感觉最终我也只是记住了个框架，各种细枝末节事后忘得一干二净，希望通过这网站能让我记录下来每次的折腾。</p>
 <p>另外，有个地方偶尔说说杂事也是极好的。</p>
-<p>2018.5.13<br>Greenbelt.</p>
+<p>2018.5.13<br>
+Greenbelt.</p>
 
       
     </div>
@@ -1067,6 +1068,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
 
   
 

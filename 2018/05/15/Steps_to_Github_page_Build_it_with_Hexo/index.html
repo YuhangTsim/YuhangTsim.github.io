@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -143,7 +143,7 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-119131331-1', 'auto');
   ga('send', 'pageview');
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
@@ -158,7 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -387,39 +387,51 @@
       
 
       
-        <p>从零开始，使用Hexo搭建个人Github page.<br><a id="more"></a></p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>从零开始一个博客，只能从Google开始。网上能轻易搜到的教程不少，但用的平台无非几个，CSDN, 简书，知乎专栏，Github，Wordpress。对于我而言，前面的三个都不是我的选择，因为他们都没办法自己管理数据，所以只能选择Github page或者Wordpress。本来wordpress已经几乎搭建好了，但是域名转接要花钱，觉得暂时没必要，故而选择Github。Github自由一点，可以随意发挥，只是又一次开始了无穷的折腾。</p>
-<p>首先，最重要的是，诸多的帖子都不一定能满足自己的需求或者达到它所描述的效果。关键还事在于不断的思考和分析，然后摸索出自己的路。  </p>
-<p>整个过程参考过的帖子很多，这里放出来一部分比较重要的：<br><a href="https://wsgzao.github.io/post/hexo-guide/" target="_blank" rel="noopener">使用GitHub和Hexo搭建免费静态Blog</a><br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo document</a><br><a href="http://www.itfanr.cc/2017/10/27/add-search-function-to-hexo-blog/" target="_blank" rel="noopener">Hexo博客添加搜索功能</a><br><a href="https://chenyxmr.github.io/2016/08/04/hexo-bilingual/" target="_blank" rel="noopener">hexo实现中英双语博客教程</a>  </p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>本文针对<font color="#6e081d"><code>Mac</code></font>和<font color="#6e081d"><code>Win</code></font>，以及<font color="#6e081d"><code>Hexo 3.7</code></font>。</p>
-<h4 id="About-Hexo"><a href="#About-Hexo" class="headerlink" title="About Hexo"></a>About Hexo</h4><p><a href="hexo.io">Hexo.io</a>:<br>Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析    文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h4 id="安装Git-Node-JS-Hexo"><a href="#安装Git-Node-JS-Hexo" class="headerlink" title="安装Git, Node.JS, Hexo"></a>安装Git, Node.JS, Hexo</h4><p><a href="https://github.com/" target="_blank" rel="noopener">Github</a>， <a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a> 按着官网步骤安装即可。  </p>
+        <p>从零开始，使用Hexo搭建个人Github page. <a id="more"></a> # 前言</p>
+<p>从零开始一个博客，只能从Google开始。网上能轻易搜到的教程不少，但用的平台无非几个，CSDN, 简书，知乎专栏，Github，Wordpress。对于我而言，前面的三个都不是我的选择，因为他们都没办法自己管理数据，所以只能选择Github page或者Wordpress。本来wordpress已经几乎搭建好了，但是域名转接要花钱，觉得暂时没必要，故而选择Github。Github自由一点，可以随意发挥，只是又一次开始了无穷的折腾。</p>
+<p>首先，最重要的是，诸多的帖子都不一定能满足自己的需求或者达到它所描述的效果。关键还事在于不断的思考和分析，然后摸索出自己的路。</p>
+<p>整个过程参考过的帖子很多，这里放出来一部分比较重要的： <a href="https://wsgzao.github.io/post/hexo-guide/" target="_blank" rel="noopener">使用GitHub和Hexo搭建免费静态Blog</a> <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">Hexo document</a> <a href="http://www.itfanr.cc/2017/10/27/add-search-function-to-hexo-blog/" target="_blank" rel="noopener">Hexo博客添加搜索功能</a> <a href="https://chenyxmr.github.io/2016/08/04/hexo-bilingual/" target="_blank" rel="noopener">hexo实现中英双语博客教程</a></p>
+<h2 id="准备工作">准备工作</h2>
+<p>本文针对<font color="#6e081d"><code>Mac</code></font>和<font color="#6e081d"><code>Win</code></font>，以及<font color="#6e081d"><code>Hexo 3.7</code></font>。</p>
+<h4 id="about-hexo">About Hexo</h4>
+<p><a href="hexo.io">Hexo.io</a>: Hexo是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析 文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h4 id="安装git-node.js-hexo">安装Git, Node.JS, Hexo</h4>
+<p><a href="https://github.com/" target="_blank" rel="noopener">Github</a>， <a href="https://nodejs.org/" target="_blank" rel="noopener">Node.js</a> 按着官网步骤安装即可。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 检查是否安装成功</span></span><br><span class="line">$ npm -v <span class="comment"># 5.6.0</span></span><br><span class="line">$ node -v <span class="comment"># v8.11.1</span></span><br><span class="line">$ git --version <span class="comment"># git version 2.16.3</span></span><br></pre></td></tr></table></figure>
-<h5 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h5><p>首先是安装。</p>
+<h5 id="hexo">Hexo</h5>
+<p>首先是安装。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装Hexo</span></span><br><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>初始化网站有两种方法。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 在目标文件夹内初始化</span></span><br><span class="line">$ hexo init <span class="comment"># 初始化网站</span></span><br><span class="line"><span class="comment"># 2. 新建文件夹初始化</span></span><br><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> folder</span><br><span class="line">$ npm install </span><br><span class="line"><span class="comment"># 没有任何错误提示的话，就是成功了</span></span><br></pre></td></tr></table></figure>
 <p>完成之后安装插件。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line">npm install hexo-server --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-deployer-heroku --save</span><br><span class="line">npm install hexo-deployer-rsync --save</span><br><span class="line">npm install hexo-deployer-openshift --save</span><br><span class="line">npm install hexo-renderer-marked@0.2 --save</span><br><span class="line">npm install hexo-renderer-stylus@0.2 --save</span><br><span class="line">npm install hexo-generator-feed@1 --save</span><br><span class="line">npm install hexo-generator-sitemap@1 --save</span><br></pre></td></tr></table></figure>
 <p>至此初步的安装就算结束了。</p>
-<h6 id="本地查看"><a href="#本地查看" class="headerlink" title="本地查看"></a>本地查看</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h6 id="本地查看">本地查看</h6>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>到<a href="localhost:4000" target="_blank" rel="noopener">本地</a>查看效果即可。</p>
-<h6 id="Hexo基本操作"><a href="#Hexo基本操作" class="headerlink" title="Hexo基本操作"></a>Hexo基本操作</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">'post_name'</span> <span class="comment"># 新建post页面 (new)</span></span><br><span class="line">$ hexo new page <span class="string">"page_name"</span> <span class="comment"># 新建网络页面 (new page)</span></span><br><span class="line">$ hexo g <span class="comment"># 生成网页 (generate)</span></span><br><span class="line">$ hexo s <span class="comment"># 启动服务器 (server)</span></span><br><span class="line">$ hexo d <span class="comment"># 部署网站 (deploy)</span></span><br><span class="line">$ hexo clean <span class="comment"># 清除缓存文件</span></span><br></pre></td></tr></table></figure>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><p>每个账号能提供一个免费的域名给我们建立Github page，username.github.io。我们可以直接使用这个域名，也可以使用自己购买的域名。</p>
+<h6 id="hexo基本操作">Hexo基本操作</h6>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">'post_name'</span> <span class="comment"># 新建post页面 (new)</span></span><br><span class="line">$ hexo new page <span class="string">"page_name"</span> <span class="comment"># 新建网络页面 (new page)</span></span><br><span class="line">$ hexo g <span class="comment"># 生成网页 (generate)</span></span><br><span class="line">$ hexo s <span class="comment"># 启动服务器 (server)</span></span><br><span class="line">$ hexo d <span class="comment"># 部署网站 (deploy)</span></span><br><span class="line">$ hexo clean <span class="comment"># 清除缓存文件</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置">配置</h2>
+<h3 id="github">Github</h3>
+<p>每个账号能提供一个免费的域名给我们建立Github page，username.github.io。我们可以直接使用这个域名，也可以使用自己购买的域名。</p>
 <p>使用Github page我们需要用username.github.io作为名字新建一个repository，新建完成后使用默认配置即可。</p>
-<p>为了正常的部署网站，还需要配置SSH和Github仓库。<br>具体参考<a href="https://zhuanlan.zhihu.com/p/32957389" target="_blank" rel="noopener">技术小白搭建个人博客 github+hexo</a>中的配置部分。</p>
-<h3 id="Hexo-1"><a href="#Hexo-1" class="headerlink" title="Hexo"></a>Hexo</h3><p>为了hexo的部署能完成，还需要在<code>./_config.yml</code>文件里进行配置。</p>
-<h5 id="配置文件：-config-yml"><a href="#配置文件：-config-yml" class="headerlink" title="配置文件： _config.yml"></a>配置文件： _config.yml</h5><p>在配置之前，首先是要了解Hexo的配置文件。配置文件一般有两种，中文叫<code>站点配置文件</code>和<code>主题配置文件</code>，分别在<code>./</code>和<code>./themes/themes_name/</code>下。<br>站点配置文件一般用于设置网站的基本信息，譬如<strong>网站名</strong>， <strong>描述</strong>，<strong>网址</strong>，<strong>主题</strong>，<strong>生成路径</strong>等，而主题配置文件一般用于设置网站的结构和功能，譬如<strong>页面</strong>， *<em>主题</em>模版*等。</p>
+<p>为了正常的部署网站，还需要配置SSH和Github仓库。 具体参考<a href="https://zhuanlan.zhihu.com/p/32957389" target="_blank" rel="noopener">技术小白搭建个人博客 github+hexo</a>中的配置部分。</p>
+<h3 id="hexo-1">Hexo</h3>
+<p>为了hexo的部署能完成，还需要在<code>./_config.yml</code>文件里进行配置。</p>
+<h5 id="配置文件-_config.yml">配置文件： _config.yml</h5>
+<p>在配置之前，首先是要了解Hexo的配置文件。配置文件一般有两种，中文叫<code>站点配置文件</code>和<code>主题配置文件</code>，分别在<code>./</code>和<code>./themes/themes_name/</code>下。 站点配置文件一般用于设置网站的基本信息，譬如<strong>网站名</strong>， <strong>描述</strong>，<strong>网址</strong>，<strong>主题</strong>，<strong>生成路径</strong>等，而主题配置文件一般用于设置网站的结构和功能，譬如<strong>页面</strong>， **主题<em>模版</em>等。</p>
 <p>部署网页的配置在站点配置文件之下，按如下配置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/&lt;User_name&gt;/&lt;User_name&gt;.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>需要特别注意的是，repo一行最后的<strong><code>.git</code></strong>。</p>
-<h2 id="网页部署"><a href="#网页部署" class="headerlink" title="网页部署"></a>网页部署</h2><p>在网页源文件夹下打开命令行，执行以下命令即可：</p>
+<h2 id="网页部署">网页部署</h2>
+<p>在网页源文件夹下打开命令行，执行以下命令即可：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo  clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ hexo clean</span><br><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
-<p>然后直接在浏览器中打开<a href="username.github.io">username.github.io</a>，观看网页部署的效果。一般每次部署都要等几分钟更新。</p>
-<h2 id="个人域名"><a href="#个人域名" class="headerlink" title="个人域名"></a>个人域名</h2><p>如果有需要使用个人域名，在购买了自己的域名后需要对DNS 服务进行配置。<br>由于我在<a href="https://www.namecheap.com/" target="_blank" rel="noopener">namecheap</a>上买的域名，以下配置都以<strong>namecheap</strong>为例。<br>打开<strong>Dashboard</strong>之后，进入<strong>AdvanceDNS</strong>设置，删除所有默认的Host record。添加3条新的Record如下：</p>
+<p>然后直接在浏览器中打开<a href="username.github.io" class="uri">username.github.io</a>，观看网页部署的效果。一般每次部署都要等几分钟更新。</p>
+<h2 id="个人域名">个人域名</h2>
+<p>如果有需要使用个人域名，在购买了自己的域名后需要对DNS 服务进行配置。 由于我在<a href="https://www.namecheap.com/" target="_blank" rel="noopener">namecheap</a>上买的域名，以下配置都以<strong>namecheap</strong>为例。 打开<strong>Dashboard</strong>之后，进入<strong>AdvanceDNS</strong>设置，删除所有默认的Host record。添加3条新的Record如下：</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>Type</th>
 <th>Host</th>
 <th>Value</th>
@@ -427,19 +439,19 @@
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>A Record</td>
 <td>@</td>
 <td>192.30.252.153</td>
 <td>Automatic</td>
 </tr>
-<tr>
+<tr class="even">
 <td>A Record</td>
 <td>@</td>
 <td>192.30.252.153</td>
 <td>Automatic</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>CNAME</td>
 <td>www</td>
 <td>username.github.io</td>
@@ -450,8 +462,9 @@
 <p>其次，在<code>./source</code>文件下新建<code>CNAME</code>文件，内容如下，注意文件无后缀。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yourdomain.address</span><br></pre></td></tr></table></figure>
 <p>保存，重新部署网页即可。</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>部署网页的内容在以上应该都覆盖到了，接下来的的文章依次是</p>
-<ol>
+<h2 id="最后">最后</h2>
+<p>部署网页的内容在以上应该都覆盖到了，接下来的的文章依次是</p>
+<ol style="list-style-type: decimal">
 <li>Github备份网页源码以及双语网页设置</li>
 <li>网站页面、内容、功能的添加</li>
 <li>…</li>
@@ -639,7 +652,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#About-Hexo"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">About Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Git-Node-JS-Hexo"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">安装Git, Node.JS, Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Hexo"><span class="nav-number">1.1.0.2.1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#本地查看"><span class="nav-number">1.1.0.2.1.1.</span> <span class="nav-text">本地查看</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#Hexo基本操作"><span class="nav-number">1.1.0.2.1.2.</span> <span class="nav-text">Hexo基本操作</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">1.2.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github"><span class="nav-number">1.2.1.</span> <span class="nav-text">Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置文件：-config-yml"><span class="nav-number">1.2.2.0.1.</span> <span class="nav-text">配置文件： _config.yml</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网页部署"><span class="nav-number">1.3.</span> <span class="nav-text">网页部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#个人域名"><span class="nav-number">1.4.</span> <span class="nav-text">个人域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">1.5.</span> <span class="nav-text">最后</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#about-hexo"><span class="nav-number">1.0.1.</span> <span class="nav-text">About Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装git-node.js-hexo"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装Git, Node.JS, Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#hexo"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#本地查看"><span class="nav-number">1.0.2.1.1.</span> <span class="nav-text">本地查看</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#hexo基本操作"><span class="nav-number">1.0.2.1.2.</span> <span class="nav-text">Hexo基本操作</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#github"><span class="nav-number">2.1.</span> <span class="nav-text">Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-1"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置文件-_config.yml"><span class="nav-number">2.2.0.1.</span> <span class="nav-text">配置文件： _config.yml</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网页部署"><span class="nav-number">3.</span> <span class="nav-text">网页部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#个人域名"><span class="nav-number">4.</span> <span class="nav-text">个人域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">5.</span> <span class="nav-text">最后</span></a></li></ol></div>
             
 
           </div>
@@ -1163,6 +1176,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
 
   
 

@@ -7,7 +7,7 @@
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
@@ -143,7 +143,7 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-119131331-1', 'auto');
   ga('send', 'pageview');
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
@@ -158,7 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -409,50 +409,58 @@
       
 
       
-        <p>在初步架设了个人Github page后，为了方便多端同步工作，可以将源码通过Github进行备份；其次，为了适应海外工作，架设双语网站。<br><a id="more"></a></p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在成功部署网页后，Github上只有生成后的文件，并没有网站的源文件。因此无法异地同步工作，鉴于我目前mac和window同时使用，因此有必要使用Github备份源码。其次，考虑到目前人在北美，也有双语网站的需求。</p>
-<h1 id="源码备份"><a href="#源码备份" class="headerlink" title="源码备份"></a>源码备份</h1><p>备份源码最方便的方法是在<code>username.github.io</code> 仓库（repository）下新开一个分支（branch），并使用该branch备份网站源码。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先需要在原仓库下新建一个分支。<br>打开Terminal，定位到源文件所在的文件夹。</p>
+        <p>在初步架设了个人Github page后，为了方便多端同步工作，可以将源码通过Github进行备份；其次，为了适应海外工作，架设双语网站。 <a id="more"></a></p>
+<h1 id="前言">前言</h1>
+<p>在成功部署网页后，Github上只有生成后的文件，并没有网站的源文件。因此无法异地同步工作，鉴于我目前mac和window同时使用，因此有必要使用Github备份源码。其次，考虑到目前人在北美，也有双语网站的需求。</p>
+<h1 id="源码备份">源码备份</h1>
+<p>备份源码最方便的方法是在<code>username.github.io</code> 仓库（repository）下新开一个分支（branch），并使用该branch备份网站源码。</p>
+<h2 id="准备工作">准备工作</h2>
+<p>首先需要在原仓库下新建一个分支。<br>
+打开Terminal，定位到源文件所在的文件夹。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git <span class="comment"># 添加远程仓库，注意最后的.git</span></span><br><span class="line">$ git branch <span class="comment"># 查看本地分支</span></span><br><span class="line">$ git branch -r <span class="comment">#</span></span><br><span class="line">$ git branch <span class="built_in">source</span> <span class="comment">#</span></span><br><span class="line">$ git checkout <span class="built_in">source</span> <span class="comment">#</span></span><br><span class="line"><span class="comment"># </span></span><br><span class="line">$ git checkout -b <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
 <p>然后打开Github将repository的默认branch设为source。</p>
-<h3 id="网站主题"><a href="#网站主题" class="headerlink" title="网站主题"></a>网站主题</h3><p>Github上有相当多的主题可供我们使用，比价广泛使用的是Next，本网站也是用的Next。<br>载入主题只需要在<code>/theme</code>文件夹内使用<code>git clone</code>命令即可。</p>
+<h3 id="网站主题">网站主题</h3>
+<p>Github上有相当多的主题可供我们使用，比价广泛使用的是Next，本网站也是用的Next。<br>
+载入主题只需要在<code>/theme</code>文件夹内使用<code>git clone</code>命令即可。</p>
 <p>相关的主题可以在<a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">Hexo themes</a>中获取。</p>
 <p>然后为了能同步主题配置，需要把<code>/theme/next</code>文件夹下 <strong>.git</strong>文件删掉。</p>
-<h2 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add . <span class="comment"># 添加所有文件</span></span><br><span class="line">$ git commit -m <span class="string">'new commit'</span> <span class="comment"># commit</span></span><br><span class="line">$ git push origin <span class="built_in">source</span> <span class="comment"># 将修改推至云</span></span><br></pre></td></tr></table></figure>
-<h2 id="同步"><a href="#同步" class="headerlink" title="同步"></a>同步</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin <span class="built_in">source</span> <span class="comment"># 同步文件</span></span><br></pre></td></tr></table></figure>
+<h2 id="备份">备份</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add . <span class="comment"># 添加所有文件</span></span><br><span class="line">$ git commit -m <span class="string">'new commit'</span> <span class="comment"># commit</span></span><br><span class="line">$ git push origin <span class="built_in">source</span> <span class="comment"># 将修改推至云</span></span><br></pre></td></tr></table></figure>
+<h2 id="同步">同步</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin <span class="built_in">source</span> <span class="comment"># 同步文件</span></span><br></pre></td></tr></table></figure>
 <p>为了实现远程同步，每次本地修改内容前，都需要将修改pull到本地。完成修改后，都需要将修改push至Giuhub。</p>
-<h1 id="网站双语"><a href="#网站双语" class="headerlink" title="网站双语"></a>网站双语</h1><p>Hexo本身具有在主题配置文件<code>/config.yml</code>修改网站语言的功能，但该功能不能实现两种语言在网站上动态切换。但是我们可以利用该特性实现我们所需要的效果。</p>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>双语网站的实现，实际上是在网页内部署了另一个完整的网站，再将其语言设置为英文。</p>
-<ol>
+<h1 id="网站双语">网站双语</h1>
+<p>Hexo本身具有在主题配置文件<code>/config.yml</code>修改网站语言的功能，但该功能不能实现两种语言在网站上动态切换。但是我们可以利用该特性实现我们所需要的效果。</p>
+<h2 id="实现">实现</h2>
+<p>双语网站的实现，实际上是在网页内部署了另一个完整的网站，再将其语言设置为英文。</p>
+<ol style="list-style-type: decimal">
 <li>首先，我们在根目录<code>/</code>下新建文件夹<code>/en</code>，作为英文网站的根目录。</li>
 <li>第二步，在<code>/en</code>文件夹下初始化网站，或将原文件复制一遍（注意删除 <strong>.git</strong> ）。</li>
 <li>修改<code>/en</code>文件夹下的配置文件。</li>
 </ol>
-<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><h4 id="中文页面"><a href="#中文页面" class="headerlink" title="中文页面"></a>中文页面</h4><p>中文网站中，一共有3处需要修改。</p>
-<ol>
+<h3 id="修改配置文件">修改配置文件</h3>
+<h4 id="中文页面">中文页面</h4>
+<p>中文网站中，一共有3处需要修改。</p>
+<ol style="list-style-type: decimal">
 <li><p>站点配置文件</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># site</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># site</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-Hans</span></span><br></pre></td></tr></table></figure></li>
 <li><p>主题配置文件</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Menu settings</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">/en</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Menu settings</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">/en</span></span><br></pre></td></tr></table></figure></li>
 <li><p>主题目录下的语言文件<code>/themes/next/language/zh-Hans.yml</code></p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">EN</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">EN</span></span><br></pre></td></tr></table></figure></li>
 </ol>
-<h4 id="英文网站"><a href="#英文网站" class="headerlink" title="英文网站"></a>英文网站</h4><p>英文网站中，同样有3处需要修改。</p>
-<ol>
+<h4 id="英文网站">英文网站</h4>
+<p>英文网站中，同样有3处需要修改。</p>
+<ol style="list-style-type: decimal">
 <li><p>站点配置文件</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># site</span></span><br><span class="line"><span class="string">language</span> <span class="string">:</span> <span class="string">en</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/en/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">../public/en</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">lang/:title.md</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># site</span></span><br><span class="line"><span class="string">language</span> <span class="string">:</span> <span class="string">en</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/en/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Directory</span></span><br><span class="line"><span class="attr">public_dir:</span> <span class="string">../public/en</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Writing</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">lang/:title.md</span></span><br></pre></td></tr></table></figure></li>
 <li><p>主题配置文件</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Menu Settings</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">../</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Menu Settings</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">../</span></span><br></pre></td></tr></table></figure></li>
 <li><p>语言文件（<code>/en/themes/languages/en.yml</code>)</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">中文</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">    commonweal:</span> <span class="string">中文</span></span><br></pre></td></tr></table></figure></li>
 </ol>
-<h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><p>由于/en在原网站生成的过程中不会自动生成，因此实际部署双语网站需要先分别在两个网站中执行生成命令，再统一部署。</p>
+<h2 id="部署">部署</h2>
+<p>由于/en在原网站生成的过程中不会自动生成，因此实际部署双语网站需要先分别在两个网站中执行生成命令，再统一部署。</p>
 
       
     </div>
@@ -1160,6 +1168,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
 
   
 
