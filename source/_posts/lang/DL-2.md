@@ -9,16 +9,17 @@ Vectorization, fundamental in all machine learning procedure, is one of the best
 
 # Intro
 
-Training a network is a iterative proceudre which requires go though the whole training set again and again. Traditionaly, this kind of repeating is implemented as explicit for loop in programming. But this explicit for loop doesn't meet our need when training for a deep network since it is low time-efficience and asychronous. In deep learning, the input volume is much larger than traditional methods, this scenario pushs us to find a faster way in implementation. And vectorization is our solution. 
+Training a network is a iterative proceudre which requires go though the whole training set again and again. Traditionaly, this kind of repeating is implemented as explicit for loop in programming. But this explicit for loop doesn't meet our need when training for a deep network since it is low time-efficience and asychronous. In deep learning, the input volume is much larger than traditional methods, this scenario pushs us to find a faster way in implementation. And vectorization is our solution.
 
 # Vectorization
 
 ## Example 1
+
 We use one single step, $ z=w^Tx+b$, from the previous logistic regression as an example. The $w$ and $x$ will be:
 
 $$
 \begin{aligned}
-w = \left[ \begin{array}{c} w_1 \\ w_2 \\ \vdots \\\end{array} \right] \in \Re^{n_x} , \; 
+w = \left[ \begin{array}{c} w_1 \\ w_2 \\ \vdots \\\end{array} \right] \in \Re^{n_x} , \;
 x = \left[ \begin{array}{c} x_1 \\ x_2 \\ \vdots \\\end{array}\right] \in \Re^{n_x}
 \end{aligned}
 $$
@@ -53,6 +54,7 @@ u = g(v) = \left[ \begin{array}{} g(v_1) \\ g(v_2) \\ \vdots \\ g(v_m) \end{arra
 $$
 
 There are several examples:
+
 1. $g(x)=e^x$:
     ```python
     u = np.exp(v)
@@ -96,8 +98,8 @@ The vectorization wil perform in both forward propagation & backward propagation
     \end{aligned}
     $$
 
-    The ouput will be: 
-    $$ 
+    The ouput will be:
+    $$
     \begin{aligned}
     Z =& \left[ \begin{array}{} z^{(1)}, z^{(2)}, \cdots, z^{(m)}\end{array}\right] = W^TX + [b, b, \cdots, b]_{1 \times m} \\
     =&\left[W^Tx^{(1)}+b, \cdots, W^Tx^{(m)}+b\right] \\
@@ -136,7 +138,7 @@ The vectorization wil perform in both forward propagation & backward propagation
     ```
 3. Parameter Initialization
     One thing that needed to keep in mind is that the parameter **weight**, or **W**, can not be initialized as **zero** but some random small numbers. And the **bias**, or **b**, can be initializaed as 0. (Althoght **W** can be initialized as 0 here in this single node logistics regession case, I want it to be consistance to the following example in any other network with more than one node.)
-    
+
     Code like this:
 
     ```python
