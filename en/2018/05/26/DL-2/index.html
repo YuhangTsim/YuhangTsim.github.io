@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="DeepLearning,NN,DataScience," />
 
 
 
@@ -83,16 +83,18 @@
 
 
 
-<meta name="description" content="Climb on.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tsim">
-<meta property="og:url" content="http://tsim.xyz/tags/DeepLearning/index.html">
+<meta name="description" content="Vectorization, fundamental in all machine learning procedure, is one of the best way to improve efficience during training. In this note, we wil first discuss how to perform vectorization with python">
+<meta name="keywords" content="DeepLearning,NN,DataScience">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deep Learning Note -- Vectorization on Logistic Regression">
+<meta property="og:url" content="http://tsim.xyz/2018/05/26/DL-2/index.html">
 <meta property="og:site_name" content="Tsim">
-<meta property="og:description" content="Climb on.">
+<meta property="og:description" content="Vectorization, fundamental in all machine learning procedure, is one of the best way to improve efficience during training. In this note, we wil first discuss how to perform vectorization with python">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-05-26T22:03:50.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tsim">
-<meta name="twitter:description" content="Climb on.">
+<meta name="twitter:title" content="Deep Learning Note -- Vectorization on Logistic Regression">
+<meta name="twitter:description" content="Vectorization, fundamental in all machine learning procedure, is one of the best way to improve efficience during training. In this note, we wil first discuss how to perform vectorization with python">
 
 
 
@@ -122,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://tsim.xyz/tags/DeepLearning/"/>
+  <link rel="canonical" href="http://tsim.xyz/2018/05/26/DL-2/"/>
 
 
 
 
 
-  <title>Tag: DeepLearning | Tsim</title>
+  <title>Deep Learning Note -- Vectorization on Logistic Regression | Tsim</title>
   
 
 
@@ -156,7 +158,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -304,82 +306,220 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>DeepLearning<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://tsim.xyz/en/2018/05/26/DL-2/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tsim">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/en/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tsim">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/en/2018/05/26/DL-2/" itemprop="url">
-              
-                <span itemprop="name">Deep Learning Note -- Vectorization on Logistic Regression</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Deep Learning Note -- Vectorization on Logistic Regression</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-26T14:10:57-04:00"
-              content="2018-05-26" >
-          05-26
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T14:10:57-04:00">
+                2018-05-26
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/en/categories/DeepLearning/" itemprop="url" rel="index">
+                    <span itemprop="name">DeepLearning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/en/2018/05/25/DL-1/" itemprop="url">
-              
-                <span itemprop="name">Introduction of Deep Learning</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-25T00:50:14-04:00"
-              content="2018-05-25" >
-          05-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
+        <p>Vectorization, fundamental in all machine learning procedure, is one of the best way to improve efficience during training. In this note, we wil first discuss how to perform vectorization with python when implementing a neural network, and then turn to introduce the most basic framework of deep network.<br><a id="more"></a></p>
+<h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><p>Training a network is a iterative proceudre which requires go though the whole training set again and again. Traditionaly, this kind of repeating is implemented as explicit for loop in programming. But this explicit for loop doesn’t meet our need when training for a deep network since it is low time-efficience and asychronous. In deep learning, the input volume is much larger than traditional methods, this scenario pushs us to find a faster way in implementation. And vectorization is our solution. </p>
+<h1 id="Vectorization"><a href="#Vectorization" class="headerlink" title="Vectorization"></a>Vectorization</h1><h2 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1"></a>Example 1</h2><p>We use one single step, $ z=w^Tx+b$, from the previous logistic regression as an example. The $w$ and $x$ will be:</p>
+<p>$$<br>\begin{aligned}<br>w = \left[ \begin{array}{c} w_1 \ w_2 \ \vdots \\end{array} \right] \in \Re^{n_x} , \;<br>x = \left[ \begin{array}{c} x_1 \ x_2 \ \vdots \\end{array}\right] \in \Re^{n_x}<br>\end{aligned}<br>$$</p>
+<p>If we implement this by explicit for loop, the code will be like this:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">z = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(n_x): <span class="comment"># n_x is the number of instance in traning set.</span></span><br><span class="line">    z += w[i]*x[i]</span><br><span class="line">z += b</span><br></pre></td></tr></table></figure>
+<p>The program will go thought every element in the vectors one by one, multiply them, and add to the output.</p>
+<p>But when we vectorize the procedure, the code will be like this:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">z = np.dot(w.T, x) + b</span><br></pre></td></tr></table></figure>
+<p>It turns out that vectorization will be over 300 times faster than the explicit for loop. Also, vectorization is more friendly for parallel computation on both CPU and GPU.</p>
+<h2 id="More-examples"><a href="#More-examples" class="headerlink" title="More examples"></a>More examples</h2><p>Let’s say we need to perform this procedure:</p>
+<p>$$<br>v = \left[ \begin{array}{} v_1 \ v_2 \ \vdots \ v_m \end{array}\right]<br>\Rightarrow \;<br>u = g(v) = \left[ \begin{array}{} g(v_1) \ g(v_2) \ \vdots \ g(v_m) \end{array}\right]<br>$$</p>
+<p>There are several examples:</p>
+<ol>
+<li><p>$g(x)=e^x$:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">u = np.exp(v)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>$g(x)=log(x)$:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">u = np.log(v)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>$g(x)=|x|$:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">u = np.abs(v)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Others</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">np.max(v, <span class="number">0</span>)</span><br><span class="line">v ** <span class="number">2</span></span><br><span class="line"><span class="number">1</span> / v</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="Vectorize-logistic-regression"><a href="#Vectorize-logistic-regression" class="headerlink" title="Vectorize logistic regression"></a>Vectorize logistic regression</h2><p>The logistic regression we use here is as same as the last post:</p>
+<p>$$<br>\begin{aligned}<br>Given \; x, \;\hat{y}=P(y=1|x), where\; 0\leq\hat{y}\leq1 \<br>\hat{y}^{(j)}=\sigma(w^Tx^{j}+b), \;where\;\sigma(Z^{(j)})=\frac{1}{1+e^{-z^{(j)}}}<br>\end{aligned}<br>$$</p>
+<p>The vectorization wil perform in both forward propagation &amp; backward propagation:</p>
+<ol>
+<li><p>Fprop:<br> We first define the vector for input X &amp; parameter W:</p>
+<p> $$<br> \begin{aligned}<br> X =&amp; \left[ \begin{array}{} x^{(1)}, x^{(2)}, \cdots, x^{(m)}\end{array}\right] \in \Re^{n_x \times m}\<br> W^T =&amp; \left[ \begin{array}{} w^{(1)}, w^{(2)}, \cdots, w^{(m)}\end{array}\right] \<br> Y =&amp; \left[ y^{(1)}, y^{(2)}, \cdots, y^{(m)}\right]<br> \end{aligned}<br> $$</p>
+<p> The ouput will be:<br> $$<br> \begin{aligned}<br> Z =&amp; \left[ \begin{array}{} z^{(1)}, z^{(2)}, \cdots, z^{(m)}\end{array}\right] = W^TX + [b, b, \cdots, b]_{1 \times m} \<br> =&amp;\left[W^Tx^{(1)}+b, \cdots, W^Tx^{(m)}+b\right] \<br> A =&amp;\;\sigma (Z) = \left[ \sigma (z^{(1)}), \sigma (z^{(2)}), \cdots, \sigma (z^{(m)}) \right]<br> \end{aligned}<br> $$</p>
+<p> By vectorization, the code will be:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># fprop</span></span><br><span class="line">Z = np.dot(W.T, X) + b</span><br><span class="line">A = sigmoid(Z) <span class="comment"># predefine function</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Bprop:<br> The backward propagation is shown below:</p>
+<p> $$<br> \begin{aligned}<br> dZ &amp;= \left[ dz^{(1)}, dz^{(2)}, \cdots, dz^{(m)}\right] = A-Y \<br> db &amp;= \frac{1}{m} \times \sum^{m}_{i}{dz^{(i)}} \<br> dW &amp;= \frac{1}{m} X dZ^T = \frac{1}{m}\left[ \begin{matrix} x^{(1)},\cdots\end{matrix}\right] \left[\begin{matrix} dz^{(1)} \ \vdots \end{matrix}\right] \</p>
+<pre><code>&amp;= \frac{1}{m}\left[\begin{matrix} x^{(1)}dz^{(1)} + \dots + x^{(m)}dz^{(m)}\end{matrix}\right] \\
+</code></pre><p> W &amp;= W -\alpha \times dW \<br> b &amp;= b- \alpha \times db<br> \end{aligned}<br> $$</p>
+<p> By vectorization, the code will be:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dZ = A-Y</span><br><span class="line">db = np.sum(dZ) / m</span><br><span class="line">dW = np.dot(X, (A-Y).T) / m</span><br><span class="line">W -= learning_rate * dW</span><br><span class="line">b -= learning_rate * db</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Parameter Initialization<br> One thing that needed to keep in mind is that the parameter <strong>weight</strong>, or <strong>W</strong>, can not be initialized as <strong>zero</strong> but some random small numbers. And the <strong>bias</strong>, or <strong>b</strong>, can be initializaed as 0. (Althoght <strong>W</strong> can be initialized as 0 here in this single node logistics regession case, I want it to be consistance to the following example in any other network with more than one node.)</p>
+<p> Code like this:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">w = np.random.randn(w_shape)</span><br><span class="line">b = np.zeros(b_shape)</span><br></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/en/tags/DeepLearning/" rel="tag"># DeepLearning</a>
+          
+            <a href="/en/tags/NN/" rel="tag"># NN</a>
+          
+            <a href="/en/tags/DataScience/" rel="tag"># DataScience</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/en/2018/05/25/DL-1/" rel="next" title="Introduction of Deep Learning">
+                <i class="fa fa-chevron-left"></i> Introduction of Deep Learning
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -387,6 +527,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -407,8 +551,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -475,6 +628,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro"><span class="nav-number">1.</span> <span class="nav-text">Intro</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vectorization"><span class="nav-number">2.</span> <span class="nav-text">Vectorization</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Example-1"><span class="nav-number">2.1.</span> <span class="nav-text">Example 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#More-examples"><span class="nav-number">2.2.</span> <span class="nav-text">More examples</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vectorize-logistic-regression"><span class="nav-number">2.3.</span> <span class="nav-text">Vectorize logistic regression</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -615,6 +784,10 @@
 
 
   
+  <script type="text/javascript" src="/en/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/en/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

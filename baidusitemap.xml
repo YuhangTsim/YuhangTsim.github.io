@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://tsim.xyz/2018/05/26/DL-2/</loc>
+    <lastmod>2018-05-26T22:03:31.117Z</lastmod>
+    <data>
+        <display>
+        <title>Deep Learning Note -- Vectorization on Logistic Regression</title>
+        <pubTime>2018-05-26T18:10:57.000Z</pubTime>
+        
+        <tag>DeepLearning</tag>
+         
+        <tag>NN</tag>
+         
+        <tag>DataScience</tag>
+         
+         
+           
+             
+              <breadCrumb title="DeepLearning" url="http://tsim.xyz/categories/DeepLearning/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tsim.xyz/2018/05/25/DL-1/</loc>
     <lastmod>2018-05-25T21:19:52.537Z</lastmod>
     <data>
